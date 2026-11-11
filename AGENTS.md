@@ -71,3 +71,20 @@ Do not assume an architecture document has been read unless it is available in t
 - Include relevant security and regression tests.
 - Do not mark work complete without appropriate verification.
 - Report security concerns and unresolved risks explicitly.
+
+## Token Efficiency and Response Policy
+
+- Keep responses concise, technical, and actionable.
+- Do not reproduce complete files or generated artifacts in chat.
+- Write generated content directly to the appropriate project files.
+- After modifying files, provide only:
+  - Files created or modified.
+  - A brief summary of changes.
+  - Validation results, when applicable.
+  - Errors, risks, or pending decisions.
+  - The next recommended step.
+- Show only relevant excerpts when explaining a specific issue.
+- Display full file contents only when explicitly requested.
+- Avoid repeating project context already documented in repository files.
+- Do not advance to the next OpenSpec artifact without user approval.
+- Do not generate unrelated files or code.

@@ -41,6 +41,13 @@ context: |
     - Apply secure-by-design principles.
     - Evaluate applicable OWASP Top 10:2025 risks.
     - Follow coding best practices and automated testing standards.
+
+  Agent response policy:
+    - Write artifacts directly to their designated files.
+    - Do not reproduce complete artifacts in conversation.
+    - Summarize generated artifacts concisely.
+    - Report validation results and pending decisions.
+    - Stop after generating one artifact and wait for user approval.
     
 rules:
   proposal:

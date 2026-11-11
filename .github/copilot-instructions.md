@@ -35,3 +35,11 @@ Before generating, modifying, or reviewing code:
 
 Security requirements must be considered during specification,
 design, implementation, and verification.
+
+## Response Efficiency
+
+- Follow the response policy defined in `AGENTS.md`.
+- Minimize unnecessary conversational output.
+- Do not paste entire generated files into chat.
+- Summarize changes and reference their file paths.
+- Show full content only when explicitly requested.
