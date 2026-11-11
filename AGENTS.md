@@ -88,3 +88,9 @@ Do not assume an architecture document has been read unless it is available in t
 - Avoid repeating project context already documented in repository files.
 - Do not advance to the next OpenSpec artifact without user approval.
 - Do not generate unrelated files or code.
+
+## Documentation Links
+
+- Always use relative Markdown links for references between repository documents.
+- Never use machine-specific absolute paths or `file:///` links.
+- Ensure documentation links work in GitHub and across development environments.
