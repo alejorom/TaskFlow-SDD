@@ -1,3 +1,17 @@
 /.debtdoctor
 /.metrics
 .vscode/settings.json
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / VS Code
+.vs/
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
