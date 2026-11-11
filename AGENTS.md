@@ -58,3 +58,16 @@ Do not assume an architecture document has been read unless it is available in t
 - Do not create commits or push changes unless explicitly requested.
 - Request approval before introducing new architectural dependencies.
 - Never include credentials, tokens or secrets in source control.
+
+## Engineering Quality and Security
+
+- Follow `docs/engineering-standards.md`.
+- Apply secure-by-design principles.
+- Evaluate applicable OWASP Top 10:2025 risks.
+- Follow SOLID and Clean Architecture principles where appropriate.
+- Validate untrusted inputs.
+- Avoid exposing sensitive information.
+- Use parameterized database access.
+- Include relevant security and regression tests.
+- Do not mark work complete without appropriate verification.
+- Report security concerns and unresolved risks explicitly.

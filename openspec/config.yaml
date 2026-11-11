@@ -36,28 +36,41 @@ context: |
     - Keep C# identifiers and API routes in English.
     - Specify and review behavior before implementing code.
 
+  Engineering standards:
+    - Follow docs/engineering-standards.md.
+    - Apply secure-by-design principles.
+    - Evaluate applicable OWASP Top 10:2025 risks.
+    - Follow coding best practices and automated testing standards.
+    
 rules:
   proposal:
     - Explain the business problem and expected outcome.
     - Define scope and exclusions.
     - Do not include implementation code.
+    - Identify relevant security and quality considerations.
 
   specs:
     - Express requirements as observable behavior.
     - Include verifiable scenarios.
     - Cover relevant validation and error cases.
     - Avoid implementation details.
+    - Include verifiable security requirements when applicable.
+    - Define validation and error-handling scenarios.    
 
   design:
     - Reference applicable architecture decisions.
     - Explain responsibilities across Clean Architecture layers.
     - Organize Application use cases by Features.
     - Document significant trade-offs.
+    - Follow docs/engineering-standards.md.
+    - Explain applicable OWASP Top 10:2025 mitigations.
+    - Identify relevant security risks and trade-offs.    
 
   tasks:
     - Break implementation into small, verifiable tasks.
     - Include automated tests where appropriate.
     - Keep tasks aligned with specs and design.
+    - Include security verification and relevant automated tests.    
 
 operations:
   apply:
