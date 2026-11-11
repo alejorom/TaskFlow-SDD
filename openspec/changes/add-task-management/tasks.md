@@ -2,8 +2,8 @@
 
 ## 1. Solución y estructura base de proyectos (.NET 10)
 
-- [ ] 1.1 Crear la solución `TaskFlow.sln` y los cuatro proyectos de Clean Architecture (`TaskFlow.Domain`, `TaskFlow.Application`, `TaskFlow.Infrastructure`, `TaskFlow.Api`) en .NET 10, configurando las referencias de proyecto según las reglas de dependencia (ADR-001) y verificando la compilación con `dotnet build`.
-- [ ] 1.2 Crear los proyectos de pruebas automatizadas (`TaskFlow.Domain.UnitTests`, `TaskFlow.Application.UnitTests`, `TaskFlow.IntegrationTests`) con xUnit, referenciando sus respectivos proyectos y verificando la ejecución con `dotnet test`.
+- [x] 1.1 Crear la solución `TaskFlow.sln` y los cuatro proyectos de Clean Architecture (`TaskFlow.Domain`, `TaskFlow.Application`, `TaskFlow.Infrastructure`, `TaskFlow.Api`) en .NET 10, configurando las referencias de proyecto según las reglas de dependencia (ADR-001) y verificando la compilación con `dotnet build`.
+- [x] 1.2 Crear los proyectos de pruebas automatizadas (`TaskFlow.Domain.UnitTests`, `TaskFlow.Application.UnitTests`, `TaskFlow.IntegrationTests`) con xUnit, referenciando sus respectivos proyectos y verificando la ejecución con `dotnet test`.
 
 ## 2. Modelo de Dominio y reglas de negocio
 
