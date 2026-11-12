@@ -7,8 +7,8 @@
 
 ## 2. Modelo de Dominio y reglas de negocio
 
-- [ ] 2.1 Implementar las enumeraciones `TaskStatus` y `TaskPriority`, la excepción de dominio `DomainValidationException` y la entidad `TaskItem` en `TaskFlow.Domain` con sus invariantes (título obligatorio de 1 a 200 caracteres, descripción opcional de hasta 2.000 caracteres, `DueDate` tipo `DateOnly?`, `CreatedAt` tipo `DateTimeOffset`, prioridad por defecto `Medium` y estado inicial `Pending`).
-- [ ] 2.2 Implementar pruebas unitarias en `TaskFlow.Domain.UnitTests` que verifiquen la creación válida, la asignación de valores por defecto y el lanzamiento de `DomainValidationException` ante entradas inválidas o fechas anteriores a la actual.
+- [x] 2.1 Implementar las enumeraciones `TaskStatus` y `TaskPriority`, la excepción de dominio `DomainValidationException` y la entidad `TaskItem` en `TaskFlow.Domain` con sus invariantes (título obligatorio de 1 a 200 caracteres, descripción opcional de hasta 2.000 caracteres, `DueDate` tipo `DateOnly?`, `CreatedAt` tipo `DateTimeOffset`, prioridad por defecto `Medium` y estado inicial `Pending`).
+- [x] 2.2 Implementar pruebas unitarias en `TaskFlow.Domain.UnitTests` que verifiquen la creación válida, la asignación de valores por defecto y el lanzamiento de `DomainValidationException` ante entradas inválidas o fechas anteriores a la actual.
 
 ## 3. Capa de Aplicación y caso de uso CreateTask
 
