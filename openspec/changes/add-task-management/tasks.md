@@ -12,9 +12,9 @@
 
 ## 3. Capa de Aplicación y caso de uso CreateTask
 
-- [ ] 3.1 Definir la abstracción de persistencia `ITaskRepository` (`AddAsync`, `SaveChangesAsync`) en `TaskFlow.Application` y registrar el soporte de `TimeProvider` para referencias temporales en UTC.
-- [ ] 3.2 Implementar la feature `Features/Tasks/CreateTask/` con `CreateTaskCommand`, `CreateTaskCommandHandler` y `CreateTaskResponse`, orquestando la creación atómica de la tarea sin intermediarios como MediatR (ADR-005, ADR-006).
-- [ ] 3.3 Implementar pruebas unitarias en `TaskFlow.Application.UnitTests` utilizando `FakeTimeProvider` y un doble de prueba de `ITaskRepository` para verificar la orquestación del caso de uso, el manejo de excepciones de dominio y que no haya persistencia ante fallos.
+- [x] 3.1 Definir la abstracción de persistencia `ITaskRepository` (`AddAsync`, `SaveChangesAsync`) en `TaskFlow.Application` y registrar el soporte de `TimeProvider` para referencias temporales en UTC.
+- [x] 3.2 Implementar la feature `Features/Tasks/CreateTask/` con `CreateTaskCommand`, `CreateTaskCommandHandler` y `CreateTaskResponse`, orquestando la creación atómica de la tarea sin intermediarios como MediatR (ADR-005, ADR-006).
+- [x] 3.3 Implementar pruebas unitarias en `TaskFlow.Application.UnitTests` utilizando `FakeTimeProvider` y un doble de prueba de `ITaskRepository` para verificar la orquestación del caso de uso, el manejo de excepciones de dominio y que no haya persistencia ante fallos.
 
 ## 4. Infraestructura de persistencia con EF Core y SQL Server
 

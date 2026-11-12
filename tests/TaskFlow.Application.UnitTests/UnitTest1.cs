@@ -1,10 +1,2 @@
-﻿namespace TaskFlow.Application.UnitTests;
-
-public class UnitTest1
-{
-    [Fact]
-    public void Test1()
-    {
-
-    }
-}
+// Este archivo fue el placeholder inicial. Las pruebas reales están en:
+// Features/Tasks/CreateTask/CreateTaskCommandHandlerTests.cs
