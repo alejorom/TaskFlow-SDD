@@ -20,7 +20,7 @@
 
 - [x] 4.1 Configurar la cadena de conexión de forma segura evitando credenciales en archivos versionados mediante variables de entorno o .NET User Secrets (`dotnet user-secrets`), y configurar `TaskFlowDbContext` y el mapeo Fluent API `TaskItemConfiguration` en `TaskFlow.Infrastructure` con conversiones explícitas para almacenar `TaskStatus` y `TaskPriority` como `nvarchar(20)`, columnas `DueDate` como `date` y `CreatedAt` como `datetimeoffset`.
 - [x] 4.2 Implementar el repositorio `TaskRepository` implementando `ITaskRepository` mediante consultas parametrizadas y persistencia atómica con `SaveChangesAsync`.
-- [ ] 4.3 Crear la migración inicial de EF Core `InitialCreate_Tasks` acotada a la tabla `Tasks` y verificar la generación correcta de scripts SQL idempotentes sin dependencias de claves foráneas inexistentes.
+- [x] 4.3 Crear la migración inicial de EF Core `InitialCreate_Tasks` acotada a la tabla `Tasks` y verificar la generación correcta de scripts SQL idempotentes sin dependencias de claves foráneas inexistentes.
 
 ## 5. Capa API, endpoint POST /api/tasks y Kestrel seguro
 
