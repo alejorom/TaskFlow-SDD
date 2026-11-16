@@ -2,14 +2,16 @@ namespace TaskFlow.IntegrationTests.Infrastructure;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TaskFlow.Application.Abstractions;
 using TaskFlow.Infrastructure;
 using TaskFlow.Infrastructure.Persistence;
+using TaskFlow.Infrastructure.Persistence.Repositories;
 using Xunit;
 
 public class InfrastructureServiceCollectionExtensionsTests
 {
     [Fact]
-    public void AddInfrastructureServices_WithConnectionStringInConfiguration_RegistersDbContext()
+    public void AddInfrastructureServices_WithConnectionStringInConfiguration_RegistersDbContextAndRepository()
     {
         var services = new ServiceCollection();
         var configuration = new ConfigurationBuilder()
@@ -25,6 +27,10 @@ public class InfrastructureServiceCollectionExtensionsTests
 
         var dbContext = scope.ServiceProvider.GetService<TaskFlowDbContext>();
         Assert.NotNull(dbContext);
+
+        var repository = scope.ServiceProvider.GetService<ITaskRepository>();
+        Assert.NotNull(repository);
+        Assert.IsType<TaskRepository>(repository);
     }
 
     [Fact]
