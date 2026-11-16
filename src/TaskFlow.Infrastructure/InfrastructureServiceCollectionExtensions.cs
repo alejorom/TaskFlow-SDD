@@ -3,7 +3,9 @@ namespace TaskFlow.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TaskFlow.Application.Abstractions;
 using TaskFlow.Infrastructure.Persistence;
+using TaskFlow.Infrastructure.Persistence.Repositories;
 
 /// <summary>
 /// Service collection extensions for the Infrastructure layer.
@@ -32,6 +34,8 @@ public static class InfrastructureServiceCollectionExtensions
 
         services.AddDbContext<TaskFlowDbContext>(options =>
             options.UseSqlServer(connectionString));
+
+        services.AddScoped<ITaskRepository, TaskRepository>();
 
         return services;
     }
